@@ -11,13 +11,20 @@
  * file per style scope.
  *
  *= require_self
+ *= require 'normalize'
  */
 @import "bourbon";
 @import "bitters/bitters";
 @import "neat";
 
+// Color scheme: http://www.colourlovers.com/palette/292482/Terra
+
+body {
+  background-color: $base-body-color;
+}
+
 header {
-  background-color: red;
+  background-color: $blue;
   @include outer-container;
 
   form {
@@ -44,6 +51,5 @@ main {
 
 footer {
   @include outer-container;
-  background-color: blue;
-  color: white;
+  background-color: #515151;
 }
