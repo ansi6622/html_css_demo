@@ -2,13 +2,33 @@
 <html>
 <head>
   <title>HtmlCssDemo</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <form class="search">
+    <input type="text" class="search_box">
+    <button type="submit" value="O" class="submit">0</button>
+  </form>
 
-<%= yield %>
+  <nav>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">TBD</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <%= yield %>
+</main>
+
+<footer>
+  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+</footer>
 
 </body>
 </html>

@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'bourbon', '~> 3.2.1'
 gem 'neat', '~> 1.5.1'
 gem 'bitters', '~> 0.9.3'
+gem 'refills', '~> 0.0.2'
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
