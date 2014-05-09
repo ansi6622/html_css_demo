@@ -12,15 +12,18 @@ $header-font-family: $base-font-family;
 ///////////////////////////////////////////////////////////////////////////////
 $base-font-size: 1em;
 $base-line-height: $base-font-size * 1.5;
-$base-border-radius: em(3);
+$base-border-radius: em(10);
+$form-border-radius: $base-border-radius / 2 ;
+$base-spacing: 0.5em;
 
 // Colors
 ///////////////////////////////////////////////////////////////////////////////
 
 $blue: darken(#00B4FF, 15);
 $dark-gray: #515151;
+$light-gray: lighten(#515151, 50);
 $white: #FFF;
-$light-gray: #EEE;
+$off-white: #EEE;
 
 // Still need these?
 $light-red: #FBE3E4;
@@ -29,7 +32,7 @@ $light-green: #E6EFC2;
 // End
 
 // Body Color
-$base-body-color: $light-gray;
+$base-body-color: $off-white;
 
 //  Font Colors
 $base-font-color: $white;
